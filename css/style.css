@@ -1,0 +1,285 @@
+:root{
+--primary: #eb791c;
+--secundary: #8c888f;
+--text-color: #fff;
+--text-secondary:#000;
+--text-tertiary: #5d5d5d;
+}
+
+*{
+    font-family:MontSerrat;
+    padding:0;
+    margin:0;
+    box-sizing:border-box; /*elementos nao ultrapassarem limite da div*/
+
+}
+
+
+/*event form*/
+#event-description{
+    background: linear-gradient(rgba(0,0,0,0.8 ), rgba(0,0,0,0.8)), url('../img/imagem\ 1.jpg');/*esmaecer imagem*/ 
+    background-position: center;
+    background-size:cover; /*aparecer o max da img na area disponivel*/
+    height:85vh;/*define até onde vai primeira dobra da pagina -> 100vh é a pag td antes de girar o scroll do mouse*/
+    display: flex; /*coloca as divs que definimos uma ao lado da outra -> vertical*/
+    align-items: center;
+    justify-content: space-around; /*coloca as div com espaço entre elas e afastados dos bordas*/
+    color: var(--text-color); 
+}
+
+#disclaimer h2,
+#disclaimer .event-date{
+    color:var(--primary);
+   
+}
+
+#disclaimer h2{
+    font-size:3em;
+    margin-bottom: 1em; /*unidade de medida adaptativa pra responsividade*/
+}
+
+#disclaimer .about-event{
+    margin-bottom: 1em;
+    font-size: 2em;
+    text-transform: uppercase;
+    max-width: 450px; 
+    font-weight: bold;
+}
+
+#disclaimer p{
+    font-size:1.2em;
+    margin-bottom:.3em;
+}
+
+#disclaimer .event-date{
+    font-weight:bold;
+}
+
+#subscription-form{
+    background-color: var(--secundary);
+    padding:2em;
+    max-width:22%; /*largura maxima em relação ao total de 100%da pagina*/
+    border-radius: 0.3em;
+}
+
+#subscription-form p{
+    font-size: 1.5em;
+    color: var(--text-secondary);
+    margin-bottom:1em;
+}
+
+.form-group{
+    display:flex;
+    flex-direction: column;
+    margin-bottom: 0.8em;
+    
+}
+
+.form-group label{
+    color:var(--text-tertiary);
+    margin-bottom: .3em;
+    font-weight: bold;
+}
+
+.form-group input,
+.form-group select {
+    padding:6px 8px;
+    border-radius: 5px;
+    border:none;
+    outline: none;
+}
+
+.btn{
+    background-color: var(--primary);
+    color:var(--text-color);
+    text-decoration: none;
+    text-align: center;
+    text-transform: uppercase;
+    border:none;
+    width:100%;
+    padding:12px; /*afastar texto das bordas*/
+    border-radius: 5px;
+    cursor:pointer; /*mãozinha ao passar o mouse*/
+    opacity:0.8;
+    font-weight: bold;
+}
+
+.btn:hover{
+    opacity:1;
+}
+
+/*benefits section*/
+#key-benefits h2{
+    background-color:var(--secundary) ;
+    text-align: center;
+    padding:2em;
+    font-weight:500;    
+}
+.benefits{
+    display:flex;
+    justify-content: space-around;
+    padding:4em;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.benefit{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width:20%;
+    color:var(var(--text-tertiary));
+}
+
+.benefit .benefit-img{
+    width:250px;
+    height: 250px;
+    border-radius: 50%;
+    margin-bottom: 1em;
+    background-size:cover;
+    background-position: center;
+}
+
+#ansiedade{
+    background-image:url(../img/sqr1.jpg);
+}
+
+#depressao{
+    background-image: url(../img/imagem\ 7.jpg);
+
+}
+#comparacao{
+    background-image:url(..//img/sqr2.jpg);
+}
+
+/*Location details*/
+
+#location{
+    
+    background-position: center;
+    text-align: center;
+    display:flex;
+    align-items: center;
+    justify-content:space-around;   
+    height: 400px;
+    background: linear-gradient(rgba(0,0,0,0.8 ), rgba(0,0,0,0.8)),url(../img/imagem11.jpg);
+}
+
+#adress{
+    color:var(--text-color);
+    display: flex;
+    
+}
+
+#about-location{
+    color:var(--text-color);
+    max-width: 30%;
+    
+}
+
+#about-location h3{
+    color: var(--primary);
+    text-transform: uppercase;
+    margin-bottom: 1em;
+    font-size: 2em;
+    line-height: 1.5em;
+}
+
+i {
+    
+    font-size: 3em;
+    color: var(--primary);
+    padding-right: 0.6em;
+}
+
+/*Evente details container */
+#details{
+    width: 80%;
+    margin:0% auto;
+
+}
+.detail{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap:5%;
+    margin-bottom: 4em;;
+}
+
+.detail img{
+    width:50%
+}
+
+#detail-1{
+    margin-top: 4em;
+}
+
+#detail-1 h3{
+    font-size: 3em;
+    font-weight:700 ;
+}
+
+.detail-description{
+    width:100%;
+}
+
+.detail-description h3{
+    font-size: 2em;
+    margin-bottom: 1em;
+    margin-left:1em;
+}
+
+.detail-description ul{
+    margin-left:3em;
+}
+
+.detail-description ul li:last-child{
+    font-weight: bold;
+}
+
+#cta h3{
+    padding: 2em;
+    text-align: center;
+    font-size: 2em;
+    font-weight: 700;
+    color: var(--text-color);
+}
+
+#cta{
+    padding:2em;
+    background-size: cover;
+    background-position: center;
+    background-image:linear-gradient(rgba(0,0,0,0.8 ), rgba(0,0,0,0.8)), url(../img/imagem14.jpg);
+    height: 300px;
+    text-align: center;        
+}
+
+#cta .btn {
+    width: 30%;  
+    font-size: 1em;
+    font-weight: bold;          
+}
+
+footer{
+    height: 15em;
+    padding: 2em;
+    text-align: center;    
+ }
+
+ footer h3{
+    margin-bottom: 1em;
+    color: var(--secundary);
+    font-weight: bold;
+    font-size: 1.5em;   
+ }
+
+ footer p{
+    color: var(--secundary);
+    margin-bottom:1em;
+ }
+
+ footer span{
+    font-weight: bold;
+ }
+
