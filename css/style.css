@@ -10,20 +10,20 @@
     font-family:MontSerrat;
     padding:0;
     margin:0;
-    box-sizing:border-box; /*elementos nao ultrapassarem limite da div*/
+    box-sizing:border-box; /
 
 }
 
 
 /*event form*/
 #event-description{
-    background: linear-gradient(rgba(0,0,0,0.8 ), rgba(0,0,0,0.8)), url('../img/imagem\ 1.jpg');/*esmaecer imagem*/ 
+    background: linear-gradient(rgba(0,0,0,0.8 ), rgba(0,0,0,0.8)), url('../img/imagem\ 1.jpg');
     background-position: center;
-    background-size:cover; /*aparecer o max da img na area disponivel*/
-    height:85vh;/*define até onde vai primeira dobra da pagina -> 100vh é a pag td antes de girar o scroll do mouse*/
-    display: flex; /*coloca as divs que definimos uma ao lado da outra -> vertical*/
+    background-size:cover; /
+    height:85vh;/
+    display: flex; 
     align-items: center;
-    justify-content: space-around; /*coloca as div com espaço entre elas e afastados dos bordas*/
+    justify-content: space-around; 
     color: var(--text-color); 
 }
 
@@ -35,7 +35,7 @@
 
 #disclaimer h2{
     font-size:3em;
-    margin-bottom: 1em; /*unidade de medida adaptativa pra responsividade*/
+    margin-bottom: 1em; 
 }
 
 #disclaimer .about-event{
@@ -58,7 +58,7 @@
 #subscription-form{
     background-color: var(--secundary);
     padding:2em;
-    max-width:22%; /*largura maxima em relação ao total de 100%da pagina*/
+    max-width:22%; 
     border-radius: 0.3em;
 }
 
@@ -97,9 +97,9 @@
     text-transform: uppercase;
     border:none;
     width:100%;
-    padding:12px; /*afastar texto das bordas*/
+    padding:12px;
     border-radius: 5px;
-    cursor:pointer; /*mãozinha ao passar o mouse*/
+    cursor:pointer; 
     opacity:0.8;
     font-weight: bold;
 }
