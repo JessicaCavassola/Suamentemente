@@ -1,3 +1,8 @@
+* {    
+    margin: 0;
+    padding: 0;
+  }
+
 :root{
 --primary: #eb791c;
 --secundary: #8c888f;
@@ -11,6 +16,7 @@
     padding:0;
     margin:0;
     box-sizing:border-box;
+   
 
 }
 
@@ -20,8 +26,8 @@
     background: linear-gradient(rgba(0,0,0,0.8 ), rgba(0,0,0,0.8)), url('../img/imagem\ 1.jpg');
     background-position: center;
     background-size:cover; 
-    height:85vh;
-    display: flex; 
+    height:85vh;  
+    display:flex; 
     align-items: center;
     justify-content: space-around; 
     color: var(--text-color); 
